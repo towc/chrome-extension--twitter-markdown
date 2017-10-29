@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "twitter-markdown",
+  "version": "0.1.0",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://*.twitter.com/*"
+      ],
+      "js": ["marked.min.js", "content.js"]
+    }
+  ]
+}
